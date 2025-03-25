@@ -8,7 +8,8 @@ export const records = [
         "pitchforkPos": 28,
         "comment": "FKA twigs is already so fully developed as an artist that her voice—wispy, breathy, disarmingly operatic—can sometimes be overshadowed by her astonishing performances. They function as demonstrations of her dancer’s command of her body, living art installations, and full-spectrum auditory experience—together, something like live 4DX",
         "coverUrl": 'https://media.pitchfork.com/photos/5d7a863e0db1d10008f20007/master/w_1600%2Cc_limit/FKA-twigs-Two-Weeks.jpeg',
-        "command": 1,
+        "command": 0,
+        "style": "pop",
     },
     {
         "id": 1,
@@ -20,6 +21,7 @@ export const records = [
         "comment": "Hearing In Colour feels like listening to the dissection of a heartbeat—skittering anxieties mirrored in the snares, the warm glow of love reflected in steel drums, camaraderie sampled via musical voices of the past.",
         "coverUrl": 'https://media.pitchfork.com/photos/5d7bf74a6eee70000829f8c6/master/w_1600%2Cc_limit/Jamie-xx-In-Colour.jpg',
         "command": 0,
+        "style": "rock",
     },
     {
         "id": 2,
@@ -29,7 +31,8 @@ export const records = [
         "stock": 0,
         "comment": "DJ Rashad was a singular genius and one of footwork’s architects, who shared credit for this unselfishly with other members of his inimitable Teklife crew",
         "pitchforkPos": 20,
-        "command": 5,
+        "command": 0,
+        "style": "rap",
     },
 
     {
@@ -42,6 +45,7 @@ export const records = [
         "comment": "Then, now, and forever, love makes people go a little crazy. Even Erykah Badu, goddess of unbothered R&B, is not immune. Throughout Return of the Ankh, her only proper album of this decade, she offers up conflicting desires with the unfiltered realness of a drunk dial.",
         "coverUrl": 'https://media.pitchfork.com/photos/5d7bcd3d53e80c0008f43b28/master/w_1600%2Cc_limit/Erykah-Badu-New-Amerykah-Part-2.jpg',
         "command": 0,
+        "style": "rock",
     },
     {
         "id": 8,
@@ -52,7 +56,8 @@ export const records = [
         "pitchforkPos": 160,
         "comment": "Noname once quipped that her style is “lullaby rap,” in reference to her soft timbre and relaxed cadence",
         "coverUrl": 'https://media.pitchfork.com/photos/5d94b58ea540790008f9dbb0/master/w_1600,c_limit/Noname-Room25.jpg',
-        "command": 0
+        "command": 0,
+        "style": "rap",
     },
     {
         "id": 4,
@@ -64,6 +69,7 @@ export const records = [
         "comment": "On his major-label debut, Kendrick Lamar rapped like he’d been holding a breath his whole life, and when he exhaled, everything came out: his troubled and reverent relationship to West Coast gangsta rap",
         "coverUrl": 'https://media.pitchfork.com/photos/5d8901df1f868e00096102c2/master/w_1600%2Cc_limit/Kendrick-Lamar-good-kid-maad-city.jpg',
         "command": 0,
+        "style": "rap",
     },
     {
         "id": 5,
@@ -75,6 +81,7 @@ export const records = [
         "comment": "Grimes is a producer, a provocateur, a punk—and, yes, a pop star. By her own estimation, pop is “music that seeks to hit the pleasure center,” and Art Angels, replete with surging dance beats and saccharine girl-gang vocals, undeniably fits the bill. But on Claire Boucher’s fourth album, her pleasure comes cut with danger",
         "coverUrl": 'https://media.pitchfork.com/photos/5d8904bc21339a000839699c/master/w_1600%2Cc_limit/Grimes-Art-Angels.jpg',
         "command": 0,
+        "style": "punk",
     },
     {
         "id": 6,
@@ -86,6 +93,7 @@ export const records = [
         "comment": "“We be all night,” Beyoncé proclaimed on “Drunk in Love,” the most meme-ready track on her self-titled album. She was singing about riding her husband’s big body like a surfboardt, but she may as well have been referring to the way listeners gulped down Beyoncé, which dropped at midnight on a Thursday and seemed to envelop all of social media into the dawn hours while also revolutionizing how albums are conceived and released.",
         "coverUrl": 'https://media.pitchfork.com/photos/5d89069e5d366d000838ce6e/master/w_1600%2Cc_limit/Beyonce%2525CC%252581-Beyonce%2525CC%252581.jpg',
         "command": 0,
+        "style": "pop",
     },
     {
         "id": 9,
@@ -97,6 +105,7 @@ export const records = [
         "comment": "Clarke screams like a man in fear for his own life as the song’s frenzied guitar tremolos",
         "coverUrl": 'https://media.pitchfork.com/photos/5d76b1746eee70000829f38c/master/w_1600,c_limit/Deafheaven-Sunbather.jpg',
         "command": 0,
+        "style": "rock",
     }, {
         "id": 10,
         "title": 'The Dark Side of the Moon',
@@ -107,6 +116,7 @@ export const records = [
         "comment": "Clarke screams like a man in fear for his own life as the song’s frenzied guitar tremolos",
         "coverUrl": 'https://media.gibert.com/media/catalog/product/cache/9c5d587d35c1c68f95b397933fab7f6b/c/_/c_5099902987613-5099902987613_2.jpg',
         "command": 0,
+        "style": "rock",
     }
 
 
