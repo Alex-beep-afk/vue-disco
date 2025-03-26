@@ -1,7 +1,7 @@
 <script setup>
 
 const props = defineProps({
-    TotAlbum: Object,
+    TotAlbum: Object
 })
 const emit = defineEmits(['onAdd', 'onLess', 'onStockAdd', 'onStockLess'])
 function addCompteur(id) {
@@ -19,23 +19,23 @@ function lessStock(id) {
 </script>
 
 <template>
-
     <!-- one records -->
-    <div class=" container px-5 mx-auto" v-for="album in TotAlbum" :key="album.id">
-        <div :class="{ 'bg-red-100': album.style === 'rap', 'bg-blue-100': album.style === 'rock', 'bg-green-100': album.style === 'pop', 'bg-yellow-100': album.style === 'punk' }"
+    <div class=" container px-5 mx-auto">
+        <div :class="{ 'bg-red-100': TotAlbum.style === 'rap', 'bg-blue-100': TotAlbum.style === 'rock', 'bg-green-100': TotAlbum.style === 'pop', 'bg-yellow-100': TotAlbum.style === 'punk' }"
             class="p-5 flex items-center mx-auto border-b shadow-md mb-10 border-gray-400 rounded-lg sm:flex-row flex-col">
             <div class="sm:w-44 sm:h-44 lg:w-40 lg:h-40 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                <img :src="album?.coverUrl ? album.coverUrl : 'src/assets/img/default.jpg'">
+                <img :src="TotAlbum?.coverUrl ? TotAlbum.coverUrl : 'src/assets/img/default.jpg'">
             </div>
             <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h1 class="text-black text-2xl title-font font-bold mb-2">{{ album.title }}</h1>
-                <h3 class="text-black text-xl title-font mb-2">{{ album.artist }}<span class="font-light mr-2"></span>
+                <h1 class="text-black text-2xl title-font font-bold mb-2">{{ TotAlbum.title }}</h1>
+                <h3 class="text-black text-xl title-font mb-2">{{ TotAlbum.artist }}<span
+                        class="font-light mr-2"></span>
                 </h3>
-                <p class="leading-relaxed text-base">{{ album.comment }}</p>
+                <p class="leading-relaxed text-base">{{ TotAlbum.comment }}</p>
                 <div class="py-4">
 
 
-                    <div v-if="album.stock >= 1" class=" inline-block mr-2"> <!-- quand le stock est ok  -->
+                    <div v-if="TotAlbum.stock >= 1" class=" inline-block mr-2"> <!-- quand le stock est ok  -->
                         <div class="flex  pr-2 h-full items-center">
                             <svg class="text-green-500 w-6 h-6 mr-1" width="24" height="24" viewBox="0 0 24 24"
                                 stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -44,7 +44,7 @@ function lessStock(id) {
                                 <circle cx="12" cy="12" r="9" />
                                 <path d="M9 12l2 2l4 -4" />
                             </svg>
-                            <p class="title-font font-medium">{{ album.stock }} stock</p>
+                            <p class="title-font font-medium">{{ TotAlbum.stock }} stock</p>
                         </div>
                     </div>
 
@@ -69,26 +69,26 @@ function lessStock(id) {
                             <div class="flex items-center">
                                 <button
                                     class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-teal-400"
-                                    @click="lessStock(album.id)">-</button>
-                                <p>{{ album.stock }}</p>
+                                    @click="lessStock(TotAlbum.id)">-</button>
+                                <p>{{ TotAlbum.stock }}</p>
                                 <button
                                     class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-teal-400"
-                                    @click="addStock(album.id)">+</button>
+                                    @click="addStock(TotAlbum.id)">+</button>
                             </div>
 
-                            <p>Year: {{ album.year }}</p>
-                            <p>Pitchfork Pos: #{{ album.pitchforkPos }}</p><!-- pitchfork pos  -->
+                            <p>Year: {{ TotAlbum.year }}</p>
+                            <p>Pitchfork Pos: #{{ TotAlbum.pitchforkPos }}</p><!-- pitchfork pos  -->
                         </div>
                     </div>
                     <div class="w-full">
                         <div class="float-right">
                             <button type="button"
                                 class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-teal-400"
-                                @click="decreaseCompteur(album.id)"> - </button>
-                            <span>{{ album.command }}</span>
+                                @click="decreaseCompteur(TotAlbum.id)"> - </button>
+                            <span>{{ TotAlbum.command }}</span>
                             <button type="button"
                                 class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-purple-800"
-                                @click="addCompteur(album.id)"> + </button>
+                                @click="addCompteur(TotAlbum.id)"> + </button>
                         </div>
                     </div>
                 </div>
